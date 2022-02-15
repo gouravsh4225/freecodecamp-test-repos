@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
+<body>
+  <main id="main">
+    <header id="header" class="header-section">
+      <a href="#">
+        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+          id="header-img" alt="Company logo" class="header-section-logo cursor-pointer" />
+      </a>
+      <nav id="nav-bar" class="header-section-list">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#howitworks" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+      </nav>
+    </header>
+    <section class="email-subscribtion text-center mt-1">
+      <h1>Handcrafted, home-made masterpieces</h1>
+      <div class="container">
+        <form id="form" class="email-subscribtion-form text-center m-auto mt-1"
+          action=" https://www.freecodecamp.com/email-submit">
+          <input class="m-auto" id="email" type="email" required placeholder="Email" name="email" />
+          <button class="btn-primary mt-1 m-auto" id="submit" type="submit">Submit</button>
+      </div>
+      </form>
+    </section>
+    <section id="features" class="mt-1">
+      <div class="container">
+        <div class="flex flex-column">
+          <div class="media-card">
+            <div class="media-card-icon">
+              <i class="fa fa-3x fa-fire" aria-hidden="true"></i>
+            </div>
+            <div class="media-card-content">
+              <h5 class="media-card-heading">Premium Materials</h5>
+              <p class="media-card-para">Our trombones use the shiniest brass which is sourced locally. This will
+                increase
+                the longevity of your purchase.</p>
+            </div>
+          </div>
+          <div class="media-card">
+            <div class="media-card-icon">
+              <i class="fa fa-3x fa-truck" aria-hidden="true"></i>
+            </div>
+            <div class="media-card-content">
+              <h5 class="media-card-heading">Fast Shipping</h5>
+              <p class="media-card-para">We make sure you receive your trombone as soon as we have finished making it.
+                We also provide free returns if you are
+                not satisfied.
+              </p>
+            </div>
+          </div>
+          <div class="media-card">
+            <div class="media-card-icon">
+              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+            </div>
+            <div class="media-card-content">
+              <h5 class="media-card-heading">Quality Assurance</h5>
+              <p class="media-card-para">For every purchase you make, we will ensure there are no damages or faults and
+                we will check and test the pitch of your
+                instrument.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="howitworks" class="text-center mt-1">
+      <div class="container">
+        <iframe id="video" height="315" class="w-full"
+          src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+    <section id="pricing" class="h-full">
+      <div class="container">
+        <div class="flex flex-gap-1">
+          <div class="card">
+            <div class="card-header">
+              <h5>TENOR TROMBONE</h5>
+            </div>
+            <div class="card-content">
+              <p class="card-price">
+                <span class="card-price-icon">
+                  <i class="fa fa-2x fa-inr" aria-hidden="true"></i>
+                </span>
+                <span class="card-price-text">600</span>
+              </p>
+              <p>Lorem ipsum.</p>
+              <p>Lorem ipsum.</p>
+              <p>Lorem ipsum.</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary">Select</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h5>BASS TROMBONE</h5>
+            </div>
+            <div class="card-content">
+              <p class="card-price">
+                <span class="card-price-icon">
+                  <i class="fa fa-2x fa-inr" aria-hidden="true"></i>
+                </span>
+                <span class="card-price-text">900</span>
+              </p>
+              <p>Lorem ipsum.</p>
+              <p>Lorem ipsum.</p>
+              <p>Lorem ipsum.</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary">Select</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h5>VALVE TROMBONE</h5>
+            </div>
+            <div class="card-content">
+              <p class="card-price flex">
+                <span class="card-price-icon">
+                  <i class="fa fa-2x fa-inr" aria-hidden="true"></i>
+                </span>
+                <span class="card-price-text">1200</span>
+              </p>
+              <p>Lorem ipsum.</p>
+              <p>Lorem ipsum.</p>
+              <p>Lorem ipsum.</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary">Select</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

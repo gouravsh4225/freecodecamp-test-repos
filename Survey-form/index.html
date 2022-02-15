@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreeCodeCamp -Survey Form</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <main id="main">
+    <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+    <p id="description" class="text-center">
+      Thank you for taking the time to help us improve the platform
+    </p>
+
+    <form id="survey-form" class="mt-3 survery-form-container" onsubmit="onSubmitForm(e)">
+      <div class="form-controls">
+        <label id="name-label" class="mb-1">Name</label>
+        <input type="text" id="name" class="input-form" required placeholder="Enter your name" />
+      </div>
+      <div class="form-controls">
+        <label id="email-label" class="mb-1">Email</label>
+        <input type="email" id="email" class="input-form" required placeholder="Enter your email" />
+      </div>
+      <div class="form-controls">
+        <label id="number-label" class="mb-1">Age (optional)</label>
+        <input type="number" id="number" class="input-form" placeholder="Age" min="1" max="99" />
+      </div>
+      <div class="form-controls">
+        <label class="mb-1">Which option best describes your current role?</label>
+        <select id="dropdown">
+          <option value="student">Student</option>
+          <option value="fulltime-job">Full Time Job</option>
+          <option value="fulltime-learner">Full Time Learner</option>
+          <option value="perfer-not">Perfer not to say</option>
+          <option value="others">Others</option>
+        </select>
+      </div>
+      <div class="form-controls">
+        <p class="mb-1">Would you recommend freeCodeCamp to a friend?</p>
+        <label class="flex flex-item-center mb-1">
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />
+          <span class="ml-5">Definitely</span>
+        </label>
+        <label class="flex flex-item-center mb-1">
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio" />
+          <span class="ml-5">Maybe</span>
+        </label>
+
+        <label class="flex flex-item-center">
+          <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />
+          <span class="ml-5">Not sure</span>
+        </label>
+      </div>
+      <div class="form-controls">
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <div class="flex flex-item-center">
+          <input type="checkbox" id="front-end-project" name="frontend" value="frontend" />
+          <label for="front-end-project" class="ml-5 cursor-pointer">Front End Project</label>
+        </div>
+        <div class="flex flex-item-center">
+          <input type="checkbox" id="back-end-project" name="backend" value="backend" />
+          <label for="back-end-project" class="ml-5 cursor-pointer">Back End Project</label>
+        </div>
+        <div class="flex flex-item-center">
+          <input type="checkbox" id="data-visualization-project" name="data-visualization" value="data-visualization" />
+          <label for="data-visualization-project" class="ml-5 cursor-pointer">Data Visualization</label>
+        </div>
+        <div class="flex flex-item-center">
+          <input type="checkbox" id="challenges-project" name="challenges" value="challenges" />
+          <label for="challenges-project" class="ml-5 cursor-pointer">Challenges</label>
+        </div>
+        <div class="flex flex-item-center">
+          <input type="checkbox" id="Open-source-community-project" name="Open-source-community"
+            value="Open-source-community" />
+          <label for="Open-source-community-project" class="ml-5 cursor-pointer">Open Source Community</label>
+        </div>
+        <div class="flex flex-item-center">
+          <input type="checkbox" id="gitter-help-rooms-project" name="gitter-help-rooms" value="gitter-help-rooms" />
+          <label for="gitter-help-rooms-project" class="ml-5 cursor-pointer">Gitter help rooms</label>
+        </div>
+        <div class="flex flex-item-center">
+          <input type="checkbox" id="videos-project" name="videos" value="videos" />
+          <label for="videos-project" class="ml-5 cursor-pointer">Videos</label>
+        </div>
+        <div class="flex flex-item-center">
+          <input type="checkbox" id="city-meetups-project" name="city-meetups" value="city-meetups" />
+          <label for="city-meetups-project" class="ml-5 cursor-pointer">City Meetups</label>
+        </div>
+        <div class="flex flex-item-center">
+          <input type="checkbox" id="wiki-project" name="wiki" value="wiki" />
+          <label for="wiki-project" class="ml-5 cursor-pointer">Wiki</label>
+        </div>
+        <div class="flex flex-item-center">
+          <input type="checkbox" id="forum-project" name="forum" value="forum" />
+          <label for="forum-project" class="ml-5 cursor-pointer">Forum</label>
+        </div>
+        <div class="flex flex-item-center">
+          <input type="checkbox" id="additional-courses-project" name="additional-courses" value="additional-courses" />
+          <label for="additional-courses-project" class="ml-5 cursor-pointer">Additional Courses</label>
+        </div>
+      </div>
+      <div class="form-controls">
+        <p>Any comments or suggestions?</p>
+        <textarea class="form-control-textarea"></textarea>
+      </div>
+      <div class="form-controls">
+        <button class="form-control-btn" id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+  <script>
+    function onSubmitForm(e) {
+      console.log("e");
+    }
+  </script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
