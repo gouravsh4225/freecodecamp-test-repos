@@ -54,7 +54,7 @@ img {
      object-fit: cover;
 }
 
-.email-subscribtion-form {
+.email-subscription-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,7 +65,7 @@ img {
   max-width: 500px;
 }
 
-.email-subscribtion-form input {
+.email-subscription-form input {
   padding: 10px 20px;
   width: 100%;
   font-size: 1.2rem;
